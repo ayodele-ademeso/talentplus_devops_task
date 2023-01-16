@@ -38,5 +38,5 @@ spec:
       volumes:
       - name: {{ .Chart.Name }}-mysql
         persistentVolumeClaim:
-          claimName: {{ .Chart.Name }}-mysql  
+          claimName: {{ .Chart.Name }}-mysql
 
