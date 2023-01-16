@@ -32,6 +32,5 @@ spec:
     
       volumes:
       - name: {{ .Chart.Name }}-mongo
-        persistentVolumeClaim:
-          claimName: {{ .Chart.Name }}-mongo 
+        emptyDir: {}
 

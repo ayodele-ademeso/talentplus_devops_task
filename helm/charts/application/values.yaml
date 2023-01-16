@@ -5,8 +5,8 @@ image:
 service:
   client:
     port: 4200
-    type: ClusterIP
+    type: NodePort
 ingress:
-  host: talentplus.nerdydreams.com.ng
+  host: nerdydreams.com.ng
   path:
     client: /

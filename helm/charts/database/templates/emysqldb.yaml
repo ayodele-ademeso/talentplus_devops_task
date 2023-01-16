@@ -37,6 +37,7 @@ spec:
                key: mysqldb-pass
       volumes:
       - name: {{ .Chart.Name }}-mysql
-        persistentVolumeClaim:
-          claimName: {{ .Chart.Name }}-mysql
+        emptyDir: {}
+        # persistentVolumeClaim:
+        #   claimName: {{ .Chart.Name }}-mysql
 

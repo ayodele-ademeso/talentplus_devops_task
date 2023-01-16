@@ -8,12 +8,12 @@ image:
 service:
   books:
     port: 9000
-    type: ClusterIP
+    type: NodePort
   main:
     port: 5000
-    type: ClusterIP
+    type: NodePort
 ingress:
-  host: talentplus.nerdydreams.com.ng
+  host: nerdydreams.com.ng
   path:
     main: /api
     books: /webapi
