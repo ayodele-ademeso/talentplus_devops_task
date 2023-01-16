@@ -1,0 +1,12 @@
+image:
+  client:
+    repository: seven02/emart_client
+    tag: latest
+service:
+  client:
+    port: 4200
+    type: ClusterIP
+ingress:
+  host: talentplus.nerdydreams.com.ng
+  path:
+    client: /

@@ -1,0 +1,19 @@
+image:
+  books: 
+    repository: seven02/emart_javaapi
+    tag: latest
+  main: 
+    repository: seven02/emart_nodeapi
+    tag: latest
+service:
+  books:
+    port: 9000
+    type: ClusterIP
+  main:
+    port: 5000
+    type: ClusterIP
+ingress:
+  host: talentplus.nerdydreams.com.ng
+  path:
+    main: /api
+    books: /webapi
