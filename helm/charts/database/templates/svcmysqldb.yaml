@@ -8,5 +8,5 @@ spec:
     targetPort: 3306
     protocol: TCP
   selector:
-    app: {{ .Release.Name }}-{{ .Chart.Name }}-mysql
+    app: {{ .Chart.Name }}-mysql
   type: {{ .Values.service.mysql.type }}

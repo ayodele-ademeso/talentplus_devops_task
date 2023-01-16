@@ -8,5 +8,5 @@ spec:
     targetPort: 27017
     protocol: TCP
   selector:
-    app: {{ .Release.Name }}-{{ .Chart.Name }}-mongo
+    app: {{ .Chart.Name }}-mongo
   type: {{ .Values.service.mongo.type }}

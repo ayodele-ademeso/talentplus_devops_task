@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}-{{ .Chart.Name }}-client
+  name: {{ .Chart.Name }}-client
   labels: 
-    app: {{ .Release.Name }}-{{ .Chart.Name }}-client
+    app: {{ .Chart.Name }}-client
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ .Release.Name }}-{{ .Chart.Name }}-client
+      app: {{ .Chart.Name }}-client
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}-{{ .Chart.Name }}-client
+        app: {{ .Chart.Name }}-client
     spec:
       containers:
-      - name: {{ .Release.Name }}-{{ .Chart.Name }}-client
+      - name: {{ .Chart.Name }}-client
         image: {{ .Values.image.client.repository }}:{{ .Values.image.client.tag }}
         imagePullPolicy: Always
         ports:
