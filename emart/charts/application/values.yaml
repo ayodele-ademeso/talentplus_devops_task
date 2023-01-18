@@ -10,3 +10,4 @@ ingress:
   host: nerdydreams.com.ng
   path:
     client: /
+namespace: ingress-nginx

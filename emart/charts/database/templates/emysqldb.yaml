@@ -4,6 +4,7 @@ metadata:
   name: {{ .Chart.Name }}-mysql
   labels:
     app: {{ .Chart.Name }}-mysql
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:

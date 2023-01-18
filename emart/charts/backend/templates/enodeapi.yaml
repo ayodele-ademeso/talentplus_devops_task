@@ -4,6 +4,7 @@ metadata:
   name: {{ .Chart.Name }}-main
   labels: 
     app: {{ .Chart.Name }}-main
+  namespace: {{ .Values.namespace }}
 spec:
   replicas: 1
   selector:

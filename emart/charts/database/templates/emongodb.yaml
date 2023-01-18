@@ -4,6 +4,7 @@ metadata:
   name: {{ .Chart.Name }}-mongo
   labels:
     app: {{ .Chart.Name }}-mongo
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
