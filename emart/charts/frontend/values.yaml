@@ -5,7 +5,7 @@ image:
 service:
   client:
     port: 4200
-    type: NodePort
+    type: NodePort #this would be LoadBalancer if it's on a cloud provider tha provisions one
 ingress:
   host: nerdydreams.com.ng
   path:
