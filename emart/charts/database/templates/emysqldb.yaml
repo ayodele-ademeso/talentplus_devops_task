@@ -39,6 +39,4 @@ spec:
       volumes:
       - name: {{ .Chart.Name }}-mysql
         emptyDir: {}
-        # persistentVolumeClaim:
-        #   claimName: {{ .Chart.Name }}-mysql
 
