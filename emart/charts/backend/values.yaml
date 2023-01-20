@@ -9,10 +9,10 @@ image:
 service:
   books:
     port: 9000
-    type: NodePort
+    type: ClusterIP
   main:
     port: 5000
-    type: NodePort
+    type: ClusterIP
 ingress:
   host: nerdydreams.com.ng
   path:
